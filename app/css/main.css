@@ -5832,9 +5832,6 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-size: 2em; }
 
-img {
-  max-width: 200px; }
-
 /** Navbar Brand **/
 header .navbar-default .navbar-brand {
   padding-top: 7px; }
@@ -5877,6 +5874,20 @@ header .navbar-default .navbar-nav .active a:hover {
   background: transparent;
   text-shadow: none; }
 
+/** Navbar Toggle **/
+header .navbar-toggle {
+  background: #279182; }
+
+header .navbar-default .navbar-toggle:focus {
+  background: #279182; }
+
+header .navbar-default .navbar-toggle .icon-bar {
+  background: white; }
+
+@media only screen and (max-width: 768px) {
+  header .navbar-collapse.in {
+    background: rgba(0, 0, 0, 0.2); } }
+
 /** Page **/
 .page {
   padding: 50px 0; }
@@ -5890,6 +5901,26 @@ header .navbar-default .navbar-nav .active a:hover {
   background: #5A4A46;
   background-image: linear-gradient(to bottom, #AD9088, #5A4A46);
   border-top: 20px solid rgba(238, 200, 86, 0.5); }
+
+/** Page --Skills **/
+#skills {
+  background-color: #E4D29D;
+  background-image: linear-gradient(to bottom, #E4D29D, #CDAE50); }
+
+.skills {
+  margin: 10px 0; }
+
+.skills h3 {
+  font-weight: 600;
+  font-size: 1.2em;
+  color: #6F4E36;
+  padding-bottom: 5px; }
+
+.skills p {
+  font-size: .8em; }
+
+.skills img {
+  width: 100%; }
 
 /** Footer **/
 footer .navbar-default {
