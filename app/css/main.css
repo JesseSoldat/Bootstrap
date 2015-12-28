@@ -5817,4 +5817,13 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+body {
+  padding-top: 70px; }
+
+img {
+  max-width: 200px; }
+
+.navbar {
+  border-radius: 0; }
+
 /*# sourceMappingURL=main.css.map */
