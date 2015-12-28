@@ -5835,18 +5835,64 @@ h1, h2, h3, h4, h5, h6 {
 img {
   max-width: 200px; }
 
-.navbar {
+/** Navbar Brand **/
+header .navbar-default .navbar-brand {
+  padding-top: 7px; }
+
+header .navbar-brand h1 {
+  color: #333B3F;
+  font-size: 1.3em;
+  font-weight: 400;
+  padding-top: 7px;
+  padding: 0 0 15px 0; }
+
+header .navbar-brand h1:hover {
+  color: #EEC856; }
+
+/**  Header Navigation **/
+header .navbar {
   border-radius: 0;
   border: 0; }
 
-footer .navbar-default {
-  background: transparent; }
+header .navbar-default {
+  background-color: #A58B43;
+  border: none; }
 
+header .navbar-default .navbar-nav a {
+  color: #33333A;
+  padding: 5px 8px; }
+
+header .navbar-default .navbar-nav a:hover {
+  color: #EEC856; }
+
+header .navbar-default .navbar-nav .active a {
+  font-weight: 700;
+  color: #EEC856;
+  background: transparent;
+  border-bottom: 4px solid #EEC856;
+  text-shadow: none; }
+
+header .navbar-default .navbar-nav .active a:hover {
+  color: #E15D5F;
+  background: transparent;
+  text-shadow: none; }
+
+/** Page **/
 .page {
   padding: 50px 0; }
 
 .page h2 {
   text-align: center;
   margin-bottom: 30px; }
+
+/** Page --About **/
+#about {
+  background: #5A4A46;
+  background-image: linear-gradient(to bottom, #AD9088, #5A4A46);
+  border-top: 20px solid rgba(238, 200, 86, 0.5); }
+
+/** Footer **/
+footer .navbar-default {
+  background: transparent; }
 
 /*# sourceMappingURL=main.css.map */
