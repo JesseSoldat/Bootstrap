@@ -5824,6 +5824,10 @@ img {
   max-width: 200px; }
 
 .navbar {
-  border-radius: 0; }
+  border-radius: 0;
+  border: 0; }
+
+footer .navbar-default {
+  background: transparent; }
 
 /*# sourceMappingURL=main.css.map */
