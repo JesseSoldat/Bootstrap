@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800|Roboto+Slab:400,100,300,700);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -5818,7 +5819,18 @@ button.close {
     display: none !important; } }
 
 body {
-  padding-top: 50px; }
+  padding-top: 50px;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 300;
+  font-size: 2em;
+  position: relative;
+  /*scrollspy*/ }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  margin: 0;
+  font-size: 2em; }
 
 img {
   max-width: 200px; }
@@ -5829,5 +5841,12 @@ img {
 
 footer .navbar-default {
   background: transparent; }
+
+.page {
+  padding: 50px 0; }
+
+.page h2 {
+  text-align: center;
+  margin-bottom: 30px; }
 
 /*# sourceMappingURL=main.css.map */

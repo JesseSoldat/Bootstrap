@@ -10,6 +10,10 @@ var _jquery2 = _interopRequireDefault(_jquery);
 
 require('bootstrap-sass');
 
+(0, _jquery2['default'])('.carousel').carousel({
+  interval: false
+});
+
 },{"bootstrap-sass":2,"jquery":3}],2:[function(require,module,exports){
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
