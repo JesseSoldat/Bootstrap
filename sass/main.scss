@@ -1,5 +1,7 @@
 @import "bootstrap";
 
+@import "font-awesome";
+
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800|Roboto+Slab:400,100,300,700);
 
 body {
@@ -132,6 +134,13 @@ and (max-width: 768px) {
 .skills img {
   width: 100%;
 }
+/** Contact **/
+#socialRow {
+ padding: 5% 20%
+}
+i {
+ text-align: center;
+} 
 /** Footer **/ 
 
 footer .navbar-default {
