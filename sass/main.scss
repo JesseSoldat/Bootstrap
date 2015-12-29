@@ -20,9 +20,7 @@ h1,h2,h3,h4,h5,h6 {
 
 
 /** Navbar Brand **/
-header .navbar-brand {
 
-}
 header .navbar-default .navbar-brand {
   padding-top: 7px;
 }
@@ -37,14 +35,11 @@ header .navbar-brand h1:hover {
   color: #EEC856;
 }
 
-header .navbar-brand span.subhead {
- 
-}
+
 
 /**  Header Navigation **/
 
 header .navbar {
-  // padding: 30px 0;
   border-radius: 0;
   border: 0;
 }
@@ -137,15 +132,22 @@ and (max-width: 768px) {
   background-image: linear-gradient(to bottom, #AD9088, #5A4A46);
   border-top: 20px solid rgba(238,200,86,.5);
 }
+/** Work --About **/ 
+#work{
+  background: #5A4A46;
+  background-image: linear-gradient(to bottom, #1CDFF6, #13ADC1);
+  border-top: 20px solid rgba(28,223,246,.5);
+}
+
 
 /** Page --Skills **/ 
 #skills {
   background-color:  #E4D29D;
   background-image: linear-gradient(to bottom, #E4D29D, #CDAE50);
 }
-.skills {
-  margin: 10px 0;
-}
+// .skills {
+//   margin: 10px 0;
+// }
 .skills h3 {
   font-weight: 600;
   font-size: 1.2em;
