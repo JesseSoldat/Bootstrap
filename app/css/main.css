@@ -7938,6 +7938,9 @@ header .navbar-default .navbar-nav a {
   color: #33333A;
   padding: 5px 8px; }
 
+header .navbar .navbar-nav {
+  padding-top: 5px; }
+
 header .navbar-default .navbar-nav a:hover {
   color: #EEC856; }
 
@@ -7952,6 +7955,22 @@ header .navbar-default .navbar-nav .active a:hover {
   color: #E15D5F;
   background: transparent;
   text-shadow: none; }
+
+/**  nav inbody **/
+header .about {
+  background: #dabcb4; }
+
+header .work {
+  background: #68ad95; }
+
+header .skills {
+  background: #ad9088; }
+
+header .experience {
+  background: #1cdff6; }
+
+header .contact {
+  background: #1cdff6; }
 
 /** Navbar Toggle **/
 header .navbar-toggle {

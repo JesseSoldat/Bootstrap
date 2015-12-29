@@ -10,9 +10,124 @@ var _jquery2 = _interopRequireDefault(_jquery);
 
 require('bootstrap-sass');
 
-(0, _jquery2['default'])('.carousel').carousel({
-  interval: false
-});
+(0, _jquery2['default'])(document).ready(function () {
+
+  (0, _jquery2['default'])('.carousel').carousel({
+    interval: false
+  });
+
+  var topoffset = 50;
+
+  // Activate Scrollspy
+  (0, _jquery2['default'])('body').scrollspy({
+    target: 'header .navbar',
+    offset: topoffset
+  });
+  //Target the BODY without JAVASCRIPT
+  //data-spy="scroll" data-target=".navbar-fixed-top" BODY TAG
+
+  //Add an inbody class on PAGE LOAD
+  var hash = (0, _jquery2['default'])(this).find('li.active a').attr('href');
+
+  switch (hash) {
+    case "#home":
+      (0, _jquery2['default'])('header nav').removeClass('about work skills experience contact');
+      break;
+
+    case "#about":
+      (0, _jquery2['default'])('header nav').addClass('about');
+      (0, _jquery2['default'])('header nav').removeClass('work skills experience contact');
+      break;
+
+    case "#work":
+      (0, _jquery2['default'])('header nav').addClass('work');
+      (0, _jquery2['default'])('header nav').removeClass('about skills experience contact');
+      break;
+
+    case "#skills":
+      (0, _jquery2['default'])('header nav').addClass('skills');
+      (0, _jquery2['default'])('header nav').removeClass('about work experience contact');
+      break;
+
+    case "#experience":
+      (0, _jquery2['default'])('header nav').addClass('experience');
+      (0, _jquery2['default'])('header nav').removeClass('about skills work contact');
+      break;
+
+    case "#contact":
+      (0, _jquery2['default'])('header nav').addClass('contact');
+      (0, _jquery2['default'])('header nav').removeClass('about skills work experience');
+      break;
+
+    default:
+
+  }
+
+  //Add an inbody class on event fired
+  (0, _jquery2['default'])('.navbar-fixed-top').on('activate.bs.scrollspy', function () {
+
+    var hash = (0, _jquery2['default'])(this).find('li.active a').attr('href');
+    if (hash !== '#home') {
+      (0, _jquery2['default'])('header nav').addClass('inbody');
+    } else {
+      (0, _jquery2['default'])('header nav').removeClass('inbody');
+    }
+  });
+
+  //Add an inbody class on event fired
+  (0, _jquery2['default'])('.navbar-fixed-top').on('activate.bs.scrollspy', function () {
+
+    var hash = (0, _jquery2['default'])(this).find('li.active a').attr('href');
+
+    switch (hash) {
+      case "#home":
+        (0, _jquery2['default'])('header nav').removeClass('about work skills experience contact');
+        break;
+
+      case "#about":
+        (0, _jquery2['default'])('header nav').addClass('about');
+        (0, _jquery2['default'])('header nav').removeClass('work skills experience contact');
+        break;
+
+      case "#work":
+        (0, _jquery2['default'])('header nav').addClass('work');
+        (0, _jquery2['default'])('header nav').removeClass('about skills experience contact');
+        break;
+
+      case "#skills":
+        (0, _jquery2['default'])('header nav').addClass('skills');
+        (0, _jquery2['default'])('header nav').removeClass('about work experience contact');
+        break;
+
+      case "#experience":
+        (0, _jquery2['default'])('header nav').addClass('experience');
+        (0, _jquery2['default'])('header nav').removeClass('about skills work contact');
+        break;
+
+      case "#contact":
+        (0, _jquery2['default'])('header nav').addClass('contact');
+        (0, _jquery2['default'])('header nav').removeClass('about skills work experience');
+        break;
+
+      default:
+
+    }
+  }); //event fired
+
+  //Use smooth scrolling when clicking on navigation
+  (0, _jquery2['default'])('.navbar a[href*=#]:not([href=#])').click(function () {
+    if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
+      var target = (0, _jquery2['default'])(this.hash);
+      target = target.length ? target : (0, _jquery2['default'])('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        (0, _jquery2['default'])('html,body').animate({
+          scrollTop: target.offset().top - topoffset + 2
+        }, 1000);
+        return false;
+      } //target.length
+    } //click function
+  }); //smooth scrolling
+}); //on page load
 
 },{"bootstrap-sass":2,"jquery":3}],2:[function(require,module,exports){
 /*!

@@ -59,6 +59,9 @@ header .navbar-default .navbar-nav a {
   color: #33333A;
   padding: 5px 8px;
 }
+header .navbar .navbar-nav {
+  padding-top: 5px;
+}
 
 header .navbar-default .navbar-nav a:hover {
   color: #EEC856;
@@ -77,6 +80,27 @@ header .navbar-default .navbar-nav .active a:hover {
   background: transparent;
   text-shadow: none;
 }
+
+/**  nav inbody **/
+
+header .about {
+  background: rgba(218, 188, 180, 1);
+}
+header .work {
+  background: rgba(104,173,149,1);
+}
+header .skills {
+  background: rgba(173, 144, 136, 1);
+ 
+}
+header .experience {
+  background: rgba(28, 223, 246, 1);
+
+}
+header .contact {
+  background: rgba(28, 223, 246, 1);
+}
+
 
 /** Navbar Toggle **/
 header .navbar-toggle {
