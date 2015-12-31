@@ -8051,6 +8051,22 @@ article p {
 i {
   text-align: center; }
 
+#resumeRow {
+  margin: 50px auto;
+  margin-bottom: 10px;
+  width: 40%; }
+
+#resumeRow a {
+  display: block;
+  color: #6F4E31;
+  text-align: center; }
+
+#resumeRow a:hover {
+  color: #EECA34;
+  font-size: 1.1em;
+  font-weight: 700;
+  text-shadow: 2px 2px #6F4E31; }
+
 /** Footer **/
 footer {
   padding: 30px 0;
