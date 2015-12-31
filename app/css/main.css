@@ -7919,8 +7919,7 @@ header .navbar-brand h1 {
   color: #333B3F;
   font-size: 1.3em;
   font-weight: 400;
-  padding-top: 7px;
-  padding: 0 0 15px 0; }
+  padding: 0 10px 15px 0; }
 
 header .navbar-brand h1:hover {
   color: #EEC856; }
@@ -7929,6 +7928,12 @@ header .navbar-brand h1:hover {
 header .navbar {
   border-radius: 0;
   border: 0; }
+
+header .navbar a {
+  padding: 0 10px 15px 0;
+  color: #333B3F;
+  padding-right: 10px;
+  vertical-align: middle; }
 
 header .navbar-default {
   background-color: #A58B43;
@@ -7961,7 +7966,7 @@ header .about {
   background: #dabcb4; }
 
 header .work {
-  background: #68ad95; }
+  background: lightcyan; }
 
 header .skills {
   background: #ad9088; }
@@ -8007,7 +8012,8 @@ header .navbar-default .navbar-toggle .icon-bar {
   border-top: 20px solid rgba(28, 223, 246, 0.5); }
 
 article {
-  height: 650px; }
+  height: 750px;
+  margin: 20px 0 0 0; }
 
 article h3 {
   font-size: 1.5em;
@@ -8046,6 +8052,10 @@ i {
   text-align: center; }
 
 /** Footer **/
+footer {
+  padding: 30px 0;
+  background-color: black; }
+
 footer .navbar-default {
   background: transparent; }
 
