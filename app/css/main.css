@@ -8006,6 +8006,21 @@ header .navbar-default .navbar-toggle .icon-bar {
   background-image: linear-gradient(to bottom, #1CDFF6, #13ADC1);
   border-top: 20px solid rgba(28, 223, 246, 0.5); }
 
+article {
+  height: 650px; }
+
+article h3 {
+  font-size: 1.5em;
+  text-align: center;
+  margin: 10px 0; }
+
+article p {
+  margin: 10px 0; }
+
+.work img {
+  width: 100%;
+  margin: 1% 0; }
+
 /** Page --Skills **/
 #skills {
   background-color: #E4D29D;

@@ -137,6 +137,26 @@ and (max-width: 768px) {
   background: #5A4A46;
   background-image: linear-gradient(to bottom, #1CDFF6, #13ADC1);
   border-top: 20px solid rgba(28,223,246,.5);
+  
+}
+article {
+  height: 650px;
+}
+article h3 {
+  font-size: 1.5em;
+  text-align: center;
+  margin: 10px 0;
+}
+article p {
+  margin: 10px 0;
+  
+}
+.work {
+}
+.work img {
+  width: 100%;
+  margin: 1% 0;
+
 }
 
 
