@@ -8012,11 +8012,13 @@ header .navbar-default .navbar-toggle .icon-bar {
   border-top: 20px solid rgba(28, 223, 246, 0.5); }
 
 article {
-  height: 750px;
   margin: 20px 0 0 0; }
 
 .firstRow {
-  height: 650px; }
+  height: 600px; }
+
+.secondRow {
+  height: 700px; }
 
 article h3 {
   font-size: 1.5em;
@@ -8024,7 +8026,8 @@ article h3 {
   margin: 10px 0; }
 
 article p {
-  margin: 10px 0; }
+  margin: 10px 0;
+  font-size: .9em; }
 
 .work img {
   width: 100%;
