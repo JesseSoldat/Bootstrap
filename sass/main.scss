@@ -136,11 +136,14 @@ and (max-width: 768px) {
 }
 
 /** Page --About **/ 
-#about{
+#about {
   background: #5A4A46;
   background-image: linear-gradient(to bottom, #AD9088, #5A4A46);
   border-top: 20px solid rgba(238,200,86,.5);
 }
+#about p {
+  padding: 0 50px;
+} 
 /** Work --About **/ 
 #work{
   background: #5A4A46;
