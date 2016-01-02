@@ -7977,6 +7977,24 @@ header .experience {
 header .contact {
   background: #1cdff6; }
 
+header .jp1 {
+  background-color: #E8A2BE; }
+
+header .hi3 {
+  background-color: #809263; }
+
+header .th6 {
+  background-color: #8D807F; }
+
+header .jp2 {
+  background-color: #809263; }
+
+header .hi4 {
+  background-color: #D5DDF3; }
+
+header .th5 {
+  background-color: #AE6903; }
+
 /** Navbar Toggle **/
 header .navbar-toggle {
   background: #279182; }
@@ -7991,6 +8009,7 @@ header .navbar-default .navbar-toggle .icon-bar {
   header .navbar-collapse.in {
     background: rgba(0, 0, 0, 0.2); } }
 
+/** Carousel **/
 /** Page **/
 .page {
   padding: 50px 0; }
@@ -8039,19 +8058,32 @@ article p {
 /** Page --Skills **/
 #skills {
   background-color: #E4D29D;
-  background-image: linear-gradient(to bottom, #E4D29D, #CDAE50); }
+  background-image: linear-gradient(to bottom, #E4D29D, #CDAE50);
+  padding-bottom: 10px; }
 
 .skills h3 {
   font-weight: 600;
   font-size: 1.2em;
   color: #6F4E36;
-  padding-bottom: 5px; }
+  padding-bottom: 10px;
+  padding-top: 10px; }
 
 .skills p {
   font-size: .8em; }
 
 .skills img {
   width: 100%; }
+
+@media (max-width: 992px) {
+  .skills h3 {
+    padding-top: 60px; } }
+
+@media (max-width: 768px) {
+  .skills h3 {
+    padding-top: 40px; }
+  .skills img {
+    padding-top: 40px;
+    width: 40%; } }
 
 /** Contact **/
 #socialRow {
@@ -8083,5 +8115,9 @@ footer {
 
 footer .navbar-default {
   background: transparent; }
+
+/* Small devices (tablets, 768px and up) */
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
 
 /*# sourceMappingURL=main.css.map */

@@ -12,8 +12,61 @@ require('bootstrap-sass');
 
 (0, _jquery2['default'])(document).ready(function () {
 
+  //Carousel rotates
   (0, _jquery2['default'])('.carousel').carousel({
     interval: false
+  });
+
+  //Carousel Indicators
+  var slideqty = (0, _jquery2['default'])('#home .item').length;
+  //Automatically generate indicators
+  for (var i = 0; i < slideqty; i++) {
+    var insertText = '<li data-target="#home" data-slide-to="' + i + '" ></li>';
+    (0, _jquery2['default'])('#home ol').append(insertText);
+  }
+
+  //Carousel Fade
+
+  //TEST
+  (0, _jquery2['default'])('.carousel').on('slide.bs.carousel', function (ev) {
+    // console.log(ev);
+    var id = ev.relatedTarget.id;
+    // console.log(id);
+    switch (id) {
+
+      case "jp1":
+        (0, _jquery2['default'])('header nav').addClass('jp1');
+        (0, _jquery2['default'])('header nav').removeClass('jp2 hi3 hi4 th5 th6');
+        break;
+
+      case "hi3":
+        (0, _jquery2['default'])('header nav').addClass('hi3');
+        (0, _jquery2['default'])('header nav').removeClass('jp1 jp2 hi4 th5 th6');
+        break;
+
+      case "th6":
+        (0, _jquery2['default'])('header nav').addClass('th6');
+        (0, _jquery2['default'])('header nav').removeClass('jp1 jp2 hi3 hi4 th5');
+        break;
+
+      case "jp2":
+        (0, _jquery2['default'])('header nav').addClass('jp2');
+        (0, _jquery2['default'])('header nav').removeClass('jp1 hi3, hi4 th5 th6');
+        break;
+
+      case "hi4":
+        (0, _jquery2['default'])('header nav').addClass('hi4');
+        (0, _jquery2['default'])('header nav').removeClass('jp1 jp2 hi3 th5 th6');
+        break;
+
+      case "th5":
+        (0, _jquery2['default'])('header nav').addClass('th5');
+        (0, _jquery2['default'])('header nav').removeClass('jp1 jp2 hi3 hi4 th6');
+        break;
+
+      default:
+        console.log('default');
+    }
   });
 
   var topoffset = 50;
@@ -31,32 +84,33 @@ require('bootstrap-sass');
 
   switch (hash) {
     case "#home":
-      (0, _jquery2['default'])('header nav').removeClass('about work skills experience contact');
+      (0, _jquery2['default'])('header nav').addClass('jp1');
+      (0, _jquery2['default'])('header nav').removeClass('about work skills experience contact jp2 hi3 hi4 th5 th6');
       break;
 
     case "#about":
       (0, _jquery2['default'])('header nav').addClass('about');
-      (0, _jquery2['default'])('header nav').removeClass('work skills experience contact');
+      (0, _jquery2['default'])('header nav').removeClass('work skills experience contact jp1 jp2 hi3 hi4 th5 th6');
       break;
 
     case "#work":
       (0, _jquery2['default'])('header nav').addClass('work');
-      (0, _jquery2['default'])('header nav').removeClass('about skills experience contact');
+      (0, _jquery2['default'])('header nav').removeClass('about skills experience contact jp1 jp2 hi3 hi4 th5 th6');
       break;
 
     case "#skills":
       (0, _jquery2['default'])('header nav').addClass('skills');
-      (0, _jquery2['default'])('header nav').removeClass('about work experience contact');
+      (0, _jquery2['default'])('header nav').removeClass('about work experience contact jp1 jp2 hi3 hi4 th5 th6');
       break;
 
     case "#experience":
       (0, _jquery2['default'])('header nav').addClass('experience');
-      (0, _jquery2['default'])('header nav').removeClass('about skills work contact');
+      (0, _jquery2['default'])('header nav').removeClass('about skills work contact jp1 jp2 hi3 hi4 th5 th6');
       break;
 
     case "#contact":
       (0, _jquery2['default'])('header nav').addClass('contact');
-      (0, _jquery2['default'])('header nav').removeClass('about skills work experience');
+      (0, _jquery2['default'])('header nav').removeClass('about skills work experience jp1 jp2 hi3 hi4 th5 th6');
       break;
 
     default:
@@ -81,32 +135,74 @@ require('bootstrap-sass');
 
     switch (hash) {
       case "#home":
-        (0, _jquery2['default'])('header nav').removeClass('about work skills experience contact');
+        (0, _jquery2['default'])('header nav').addClass('jp1');
+        (0, _jquery2['default'])('header nav').removeClass('about work skills experience contact jp2 hi3 hi4 th5 th6');
+
+        var active = (0, _jquery2['default'])('div.active').attr('id');
+        console.log(active);
+
+        //check to see which image is displaying
+
+        switch (active) {
+          case "jp1":
+            console.log('case jp1');
+            (0, _jquery2['default'])('header nav').addClass('jp1');
+            (0, _jquery2['default'])('header nav').removeClass('about work skills experience contact jp2 hi3 hi4 th5 th6');
+            break;
+
+          case "hi3":
+            console.log('case hi3');
+            (0, _jquery2['default'])('header nav').addClass('hi3');
+            (0, _jquery2['default'])('header nav').removeClass('about work skills experience contact jp1 jp2 hi4 th5 th6');
+            break;
+
+          case "th6":
+            (0, _jquery2['default'])('header nav').addClass('th6');
+            (0, _jquery2['default'])('header nav').removeClass('about work skills experience contactjp1 jp2 hi3 hi4 th5');
+            break;
+
+          case "jp2":
+            (0, _jquery2['default'])('header nav').addClass('jp2');
+            (0, _jquery2['default'])('header nav').removeClass('about work skills experience contact jp1 hi3, hi4 th5 th6');
+            break;
+
+          case "hi4":
+            (0, _jquery2['default'])('header nav').addClass('hi4');
+            (0, _jquery2['default'])('header nav').removeClass('about work skills experience contact jp1 jp2 hi3 th5 th6');
+            break;
+
+          case "th5":
+            (0, _jquery2['default'])('header nav').addClass('th5');
+            (0, _jquery2['default'])('header nav').removeClass('about work skills experience contact jp1 jp2 hi3 hi4 th6');
+            break;
+
+          default:
+        }
         break;
 
       case "#about":
         (0, _jquery2['default'])('header nav').addClass('about');
-        (0, _jquery2['default'])('header nav').removeClass('work skills experience contact');
+        (0, _jquery2['default'])('header nav').removeClass('work skills experience contact jp1 jp2 hi3 hi4 th5 th6');
         break;
 
       case "#work":
         (0, _jquery2['default'])('header nav').addClass('work');
-        (0, _jquery2['default'])('header nav').removeClass('about skills experience contact');
+        (0, _jquery2['default'])('header nav').removeClass('about skills experience contact jp1 jp2 hi3 hi4 th5 th6');
         break;
 
       case "#skills":
         (0, _jquery2['default'])('header nav').addClass('skills');
-        (0, _jquery2['default'])('header nav').removeClass('about work experience contact');
+        (0, _jquery2['default'])('header nav').removeClass('about work experience contact jp1 jp2 hi3 hi4 th5 th6');
         break;
 
       case "#experience":
         (0, _jquery2['default'])('header nav').addClass('experience');
-        (0, _jquery2['default'])('header nav').removeClass('about skills work contact');
+        (0, _jquery2['default'])('header nav').removeClass('about skills work contact jp1 jp2 hi3 hi4 th5 th6');
         break;
 
       case "#contact":
         (0, _jquery2['default'])('header nav').addClass('contact');
-        (0, _jquery2['default'])('header nav').removeClass('about skills work experience');
+        (0, _jquery2['default'])('header nav').removeClass('about skills work experience jp1 jp2 hi3 hi4 th5 th6');
         break;
 
       default:
