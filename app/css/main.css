@@ -7949,33 +7949,94 @@ header .navbar .navbar-nav {
 header .navbar-default .navbar-nav a:hover {
   color: #EEC856; }
 
+header nav.jp1.navbar-default .navbar-nav a:hover {
+  color: #B42100; }
+
+header nav.jp2.navbar-default .navbar-nav a:hover {
+  color: #738D5C; }
+
+header nav.hi3.navbar-default .navbar-nav a:hover {
+  color: #EEC856; }
+
+header nav.hi4.navbar-default .navbar-nav a:hover {
+  color: #7680A1; }
+
+header nav.th5.navbar-default .navbar-nav a:hover {
+  color: #B27800; }
+
+header nav.th6.navbar-default .navbar-nav a:hover {
+  color: #FDECE4; }
+
 header .navbar-default .navbar-nav .active a {
   font-weight: 700;
   color: #EEC856;
   background: transparent;
-  border-bottom: 4px solid #EEC856;
-  text-shadow: none; }
+  border-bottom: 4px solid #EEC856; }
+
+header nav.jp1.navbar-default .navbar-nav .active a {
+  color: #B42100;
+  border-bottom: 4px solid #B42100; }
+
+header nav.jp2.navbar-default .navbar-nav .active a {
+  color: #738D5C;
+  border-bottom: 4px solid #738D5C; }
+
+header nav.hi4.navbar-default .navbar-nav .active a {
+  color: #7680A1;
+  border-bottom: 4px solid #7680A1; }
+
+header nav.th5.navbar-default .navbar-nav .active a {
+  color: #B27800;
+  border-bottom: 4px solid #B27800; }
+
+header nav.th6.navbar-default .navbar-nav .active a {
+  color: #FDECE4;
+  border-bottom: 4px solid #FDECE4; }
 
 header .navbar-default .navbar-nav .active a:hover {
   color: #E15D5F;
   background: transparent;
   text-shadow: none; }
 
+header nav.jp1.navbar-default .navbar-nav .active a:hover {
+  color: #E15D5F;
+  background: transparent;
+  text-shadow: none; }
+
+header nav.jp2.navbar-default .navbar-nav .active a:hover {
+  color: #E15D5F;
+  background: transparent;
+  text-shadow: none; }
+
+header nav.hi3.navbar-default .navbar-nav .active a:hover {
+  color: #E15D5F;
+  background: transparent;
+  text-shadow: none; }
+
+header nav.hi4.navbar-default .navbar-nav .active a:hover {
+  color: #E15D5F;
+  background: transparent;
+  text-shadow: none; }
+
+header nav.th5.navbar-default .navbar-nav .active a:hover {
+  color: #E15D5F;
+  background: transparent;
+  text-shadow: none; }
+
+header nav.th6.navbar-default .navbar-nav .active a:hover {
+  color: #E15D5F;
+  background: transparent;
+  text-shadow: none; }
+
 /**  nav inbody **/
 header .about {
-  background: #ECDFE7; }
+  background: #C6C7B8; }
 
 header .work {
-  background: lightcyan; }
+  background: #BEB7D9; }
 
 header .skills {
   background: #ECDFE9; }
-
-header .experience {
-  background: #1cdff6; }
-
-header .contact {
-  background: #1cdff6; }
 
 header .jp1 {
   background-color: #E8A2BE; }
@@ -7984,16 +8045,16 @@ header .hi3 {
   background-color: #809263; }
 
 header .th6 {
-  background-color: #A4A1BA; }
+  background-color: #C6C7B8; }
 
 header .jp2 {
-  background-color: #7D8681; }
+  background-color: #B6AFB8; }
 
 header .hi4 {
   background-color: #D5DDF3; }
 
 header .th5 {
-  background-color: #E1C259; }
+  background-color: #E7C37F; }
 
 /** Navbar Toggle **/
 header .navbar-toggle {
@@ -8019,9 +8080,9 @@ header .navbar-default .navbar-toggle .icon-bar {
 
 /** Page --About **/
 #about {
-  background: #BEB9D3;
-  background-image: linear-gradient(to bottom, #BEB9D3, #BEB9D3);
-  border-top: 20px solid #ECDFE7; }
+  background: #E1FFFF;
+  background-image: linear-gradient(to bottom, #E1FFFF, #E1FFFF);
+  border-top: 20px solid #C6C7B8; }
 
 #about p {
   padding: 0 50px; }
@@ -8058,7 +8119,8 @@ article p {
 #skills {
   background-color: #E1FFFF;
   background-image: linear-gradient(to bottom, #E1FFFF, #E1FFFF);
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  border-top: 20px solid #ECDFE9; }
 
 .skills h3 {
   font-weight: 600;
