@@ -7953,7 +7953,7 @@ header nav.jp1.navbar-default .navbar-nav a:hover {
   color: #B42100; }
 
 header nav.jp2.navbar-default .navbar-nav a:hover {
-  color: #738D5C; }
+  color: #393F13; }
 
 header nav.hi3.navbar-default .navbar-nav a:hover {
   color: #EEC856; }
@@ -7978,8 +7978,8 @@ header nav.jp1.navbar-default .navbar-nav .active a {
   border-bottom: 4px solid #B42100; }
 
 header nav.jp2.navbar-default .navbar-nav .active a {
-  color: #738D5C;
-  border-bottom: 4px solid #738D5C; }
+  color: #393F13;
+  border-bottom: 4px solid #393F13; }
 
 header nav.hi4.navbar-default .navbar-nav .active a {
   color: #7680A1;
@@ -8048,7 +8048,7 @@ header .th6 {
   background-color: #C6C7B8; }
 
 header .jp2 {
-  background-color: #B6AFB8; }
+  background-color: #738D5C; }
 
 header .hi4 {
   background-color: #D5DDF3; }
