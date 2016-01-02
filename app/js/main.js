@@ -22,12 +22,13 @@ require('bootstrap-sass');
   //Automatically generate indicators
   for (var i = 0; i < slideqty; i++) {
     var insertText = '<li data-target="#home" data-slide-to="' + i + '" ></li>';
-    (0, _jquery2['default'])('#home ol').append(insertText);
+    var ol = (0, _jquery2['default'])('#home ol');
+    (0, _jquery2['default'])('ol').append(insertText);
   }
 
-  //Carousel Fade
+  (0, _jquery2['default'])("ol li").first().addClass("active");
 
-  //TEST
+  //Change the Nav color each time a new photo in shown
   (0, _jquery2['default'])('.carousel').on('slide.bs.carousel', function (ev) {
     // console.log(ev);
     var id = ev.relatedTarget.id;

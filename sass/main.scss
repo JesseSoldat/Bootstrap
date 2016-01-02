@@ -86,14 +86,14 @@ header .navbar-default .navbar-nav .active a:hover {
 /**  nav inbody **/
 
 header .about {
-  background: rgba(218, 188, 180, 1);
+  background: #ECDFE7;
 }
 header .work {
   background: rgba(224, 255, 255, 1);
 
 }
 header .skills {
-  background: rgba(173, 144, 136, 1);
+  background: #ECDFE9;
 
  
 }
@@ -111,7 +111,7 @@ header .hi3 {
   background-color: #809263;
 }
 header .th6 {
-  background-color: #8D807F;
+  background-color: #A4A1BA;
 }
 header .jp2 {
   background-color: #7D8681;
@@ -120,7 +120,7 @@ header .hi4 {
   background-color: #D5DDF3;
 }
 header .th5 {
-  background-color: #AE6903;
+  background-color: #E1C259;
 }
 
 
@@ -144,27 +144,6 @@ and (max-width: 768px) {
   }
 }
 
-/** Carousel **/ 
-// .carousel.fade {
-//   opacity: 1;
-// }
-// .carousel.fade .item {
-//   transition: opacity ease-out .7s;
-//   left: 0;
-//   top: 0;
-//   opacity: 0;
-//   position: absolute;
-//   width: 100%;
-//   display: block;
-// }
-// .carousel.fade .item:first-child {
-//   top: auto;
-//   opacity: 1;
-//   position: relative;
-// }
-// .carousel.fade .item.active {
-//   opacity: 1;
-// }
 
 /** Page **/ 
 .page {
@@ -177,18 +156,18 @@ and (max-width: 768px) {
 
 /** Page --About **/ 
 #about {
-  background: #5A4A46;
-  background-image: linear-gradient(to bottom, #AD9088, #5A4A46);
-  border-top: 20px solid rgba(238,200,86,.5);
+  background: #BEB9D3;
+  background-image: linear-gradient(to bottom, #BEB9D3, #BEB9D3);
+  border-top: 20px solid #ECDFE7;
 }
 #about p {
   padding: 0 50px;
 } 
 /** Work --About **/ 
 #work{
-  background: #5A4A46;
-  background-image: linear-gradient(to bottom, #1CDFF6, #13ADC1);
-  border-top: 20px solid rgba(28,223,246,.5);
+  background: #ECDFE8;
+  background-image: linear-gradient(to bottom, #ECDFE8, #ECDFE8);
+  border-top: 20px solid #BEB8D6;
   
 }
 article {
@@ -222,17 +201,15 @@ article p {
 
 /** Page --Skills **/ 
 #skills {
-  background-color:  #E4D29D;
-  background-image: linear-gradient(to bottom, #E4D29D, #CDAE50);
+  background-color:  #E1FFFF;
+  background-image: linear-gradient(to bottom, #E1FFFF, #E1FFFF);
   padding-bottom: 10px;
-
-
 }
 
 .skills h3 {
   font-weight: 600;
   font-size: 1.2em;
-  color: #6F4E36;
+  color: #AA70E6;
   padding-bottom: 10px;
   padding-top: 10px;
 
@@ -248,10 +225,6 @@ article p {
   .skills h3 {
     padding-top: 60px;
   }
-  .skills img {
-
-  
-  }
 
 }
 @media (max-width: 768px) { 
@@ -266,7 +239,6 @@ article p {
   } 
 
 }
-
 
 /** Contact **/
 #socialRow {
@@ -296,7 +268,7 @@ i {
 /** Footer **/ 
 footer {
   padding: 30px 0;
-  background-color: #6F4E31;
+  background-color: #ECDFEA;
 }
 footer .navbar-default {
   background: transparent;

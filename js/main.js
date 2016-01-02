@@ -18,12 +18,15 @@ $('.carousel').carousel({
 //Automatically generate indicators
   for (var i = 0; i < slideqty; i++) {
     var insertText = '<li data-target="#home" data-slide-to="' + i + '" ></li>';
-    $('#home ol').append(insertText);
+    var ol = $('#home ol');
+    $('ol').append(insertText);
   }
+  
+  $( "ol li" ).first().addClass( "active" );
 
-//Carousel Fade
 
-//TEST
+
+//Change the Nav color each time a new photo in shown 
 $('.carousel').on('slide.bs.carousel', function (ev) {
   // console.log(ev);
   var id = ev.relatedTarget.id;

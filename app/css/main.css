@@ -7963,13 +7963,13 @@ header .navbar-default .navbar-nav .active a:hover {
 
 /**  nav inbody **/
 header .about {
-  background: #dabcb4; }
+  background: #ECDFE7; }
 
 header .work {
   background: lightcyan; }
 
 header .skills {
-  background: #ad9088; }
+  background: #ECDFE9; }
 
 header .experience {
   background: #1cdff6; }
@@ -7984,7 +7984,7 @@ header .hi3 {
   background-color: #809263; }
 
 header .th6 {
-  background-color: #8D807F; }
+  background-color: #A4A1BA; }
 
 header .jp2 {
   background-color: #7D8681; }
@@ -7993,7 +7993,7 @@ header .hi4 {
   background-color: #D5DDF3; }
 
 header .th5 {
-  background-color: #AE6903; }
+  background-color: #E1C259; }
 
 /** Navbar Toggle **/
 header .navbar-toggle {
@@ -8009,7 +8009,6 @@ header .navbar-default .navbar-toggle .icon-bar {
   header .navbar-collapse.in {
     background: rgba(0, 0, 0, 0.2); } }
 
-/** Carousel **/
 /** Page **/
 .page {
   padding: 50px 0; }
@@ -8020,18 +8019,18 @@ header .navbar-default .navbar-toggle .icon-bar {
 
 /** Page --About **/
 #about {
-  background: #5A4A46;
-  background-image: linear-gradient(to bottom, #AD9088, #5A4A46);
-  border-top: 20px solid rgba(238, 200, 86, 0.5); }
+  background: #BEB9D3;
+  background-image: linear-gradient(to bottom, #BEB9D3, #BEB9D3);
+  border-top: 20px solid #ECDFE7; }
 
 #about p {
   padding: 0 50px; }
 
 /** Work --About **/
 #work {
-  background: #5A4A46;
-  background-image: linear-gradient(to bottom, #1CDFF6, #13ADC1);
-  border-top: 20px solid rgba(28, 223, 246, 0.5); }
+  background: #ECDFE8;
+  background-image: linear-gradient(to bottom, #ECDFE8, #ECDFE8);
+  border-top: 20px solid #BEB8D6; }
 
 article {
   margin: 20px 0 0 0; }
@@ -8057,14 +8056,14 @@ article p {
 
 /** Page --Skills **/
 #skills {
-  background-color: #E4D29D;
-  background-image: linear-gradient(to bottom, #E4D29D, #CDAE50);
+  background-color: #E1FFFF;
+  background-image: linear-gradient(to bottom, #E1FFFF, #E1FFFF);
   padding-bottom: 10px; }
 
 .skills h3 {
   font-weight: 600;
   font-size: 1.2em;
-  color: #6F4E36;
+  color: #AA70E6;
   padding-bottom: 10px;
   padding-top: 10px; }
 
@@ -8111,7 +8110,7 @@ i {
 /** Footer **/
 footer {
   padding: 30px 0;
-  background-color: #6F4E31; }
+  background-color: #ECDFEA; }
 
 footer .navbar-default {
   background: transparent; }
